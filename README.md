@@ -2,6 +2,8 @@
 
 ![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
 
+
+View site: https://manage-landing-page-black.vercel.app/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.

@@ -1,0 +1,65 @@
+
+// $br :hsl(12, 88%, 59%);
+$br:#ed603a;
+$db : hsl(228, 39%, 23%);
+$dgb: hsl(227, 12%, 61%);
+$vdb: hsl(233, 12%, 13%);
+$vpr: hsl(13, 100%, 96%);
+$vlg: hsl(0, 0%, 98%);
+
+@import 'header';
+@import 'home';
+@import 'about';
+@import 'contact';
+@import 'footer';
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+.hide{
+    display: none;
+}
+
+*{
+    font-family: 'Be Vietnam', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+p{
+    color:$dgb;
+}
+.logo{
+    transform: translateY(50%);
+}
+h1,
+h2,
+h3{
+    color:$db;
+    font-weight: 700;
+    
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+}
+button{
+    padding:1em 2.6em;
+    border-radius: 2em;
+    border: none;
+    font-family: 'Be Vietnam', sans-serif;
+    background-color: $br;
+    color:$vlg;
+    box-shadow: 0px 10px 30px .1px $br;
+    font-weight: 500;
+    &:hover{
+        opacity: .7;
+        cursor: pointer;    
+    }
+}
+
+li{
+    list-style: none;
+}
+

@@ -1,0 +1,208 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .top,
+    .bottom{
+        width:100%;
+    }
+    .bottom{
+        padding: 5vw 10vw;
+        background-color: $vdb;
+        color:$vlg;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            color:$dgb;
+        }
+        .one{
+            display: flex;
+            flex-direction: column;
+           
+            justify-content: space-between;
+            align-items: center;
+            height:20vh;
+            .social{
+                i{
+                    padding:0 .2em;
+                    &:hover{
+                        color:$br;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .three{
+            display: flex;
+            flex-direction: column;
+           
+            justify-content: space-between;
+            align-items: center;
+            height:20vh;
+            input{
+                padding:.5em .8em;
+                border-radius: 5em;
+                border: none;
+                margin-right: 1vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: inline-block;
+            }
+            .input{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                p{
+                color:red;
+                font-size: 12px;
+                display: none;
+                }
+            }
+            .invalid{
+                border: 2px solid red;
+                color:red;
+            }
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .list{
+                &:hover{
+                    opacity: .7;
+                    cursor: pointer;
+                }
+            }
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            p{
+                text-align: left;
+                line-height: 40px;
+                &:hover{
+                    color:$br;
+                    cursor: pointer;
+                }
+            }
+            flex-grow: 1;
+            .l1{
+                display: flex;
+                flex-direction: column;
+            }
+            .l2{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .top{
+        background-color: $br;
+        display: flex;
+        z-index: -2;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5em 10vw;
+        overflow: hidden;
+        position: relative;
+       
+        #x2{
+            position:absolute;
+            z-index: -1;
+        }
+        h2{
+            color:$vlg;
+            max-width:20ch;
+        }
+        .btn{
+            padding:.8em 2em;
+            border-radius: 2em;
+            border: none;
+            font-family: 'Be Vietnam', sans-serif;
+            background-color: $vlg;
+            color:$br;
+            // width:fit-content;
+            font-weight: 700;
+            &:hover{
+                opacity: .7;
+                cursor: pointer;
+            }
+        }
+    }
+h2{
+    font-size: 2.5rem;
+}
+.list{
+    padding:.5em 2em;
+    border-radius: 2em;
+    border: none;
+    font-family: 'Be Vietnam', sans-serif;
+    background-color: $br;
+    color:$vlg;
+    width:fit-content;
+    font-weight: 700;
+    
+ }
+}
+
+
+
+@media screen and (max-width:850px){
+footer{
+    .top{
+        flex-direction: column;
+        text-align: center;
+        gap:1em;
+        position: relative;
+        #x2{
+            width:250%;
+            position: absolute;
+            bottom:0;
+            left:0;
+        }
+    }
+    
+    .bottom{
+        padding: 5vw 5vw;
+        flex-direction: column-reverse;
+        position: relative;
+        padding-bottom: 5em;
+        .one{
+        flex-direction: column-reverse;
+        height:100px;
+        width: 100%;
+        div{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap:1em;
+        }
+        }
+        nav{
+            width: 100%;
+            margin:1em 0;
+            p{
+            color:white;
+            }
+        }
+        .three{
+            height:50px;
+            span{
+                position: absolute;
+                bottom: 1em;
+                left:0;
+                text-align: center;
+                width:100%;
+
+            }
+
+        }
+    }
+}
+}

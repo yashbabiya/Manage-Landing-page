@@ -1,0 +1,123 @@
+.about{
+    width:100%;
+    
+    display: flex;
+    position: relative;
+    .left{
+        padding: 2vw 10vw;
+    }
+    h2{
+        font-size: 2.5rem;
+        
+    }
+    #x{
+        position: absolute;
+        bottom: -60%;
+        left:-30%;
+        z-index: -1;
+    }
+    p{
+        max-width: 40ch;
+    }
+    &>div{
+        width:100%; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        
+     }
+     h3{
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         text-align: left;
+         width: 100%;
+         margin-bottom: 20px;
+        
+     }
+     .list{
+        padding:.5em 2em;
+        border-radius: 2em;
+        border: none;
+        font-family: 'Be Vietnam', sans-serif;
+        background-color: $br;
+        color:$vlg;
+        font-weight: 700;
+     }
+     .cont{
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         margin-bottom: 50px;
+     }
+     .data{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: center;
+         padding: .5em 2em;
+         
+     }
+}
+.listx{
+    display: none;
+    padding:.1em 1em;
+    border-radius: 2em;
+    border: none;
+    font-family: 'Be Vietnam', sans-serif;
+    background-color: $br;
+    color:$vlg;
+    font-weight: 700;
+}
+@media screen and (max-width:960px){
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #x{
+            display: none;
+        }
+        .left{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .right{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h2{
+            font-size: 1.8rem;
+        }
+        h3{
+           
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: $vpr;
+            border-radius:2em ;
+            padding:.2em 0;
+            gap:.5em;
+        }
+        .list{
+            display: none;
+        }
+        .listx{
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0;
+        }
+        .right{
+            margin-top: 2em;
+            padding: 3vw;
+            font-size: 14px;
+        }
+        .data{
+            padding: 0;
+        }
+    }
+}
